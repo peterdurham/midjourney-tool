@@ -10,7 +10,7 @@ Drop in lesser-known facts or details—ancient origins, planetary links, myster
 
 End with an insight that hits emotionally or intellectually, leaving the viewer with a sense of mythic memory, psychological truth, or spiritual relevance
 
-Please shape this into a YouTube Short/TikTok/Reels pacing structure with suggested cut points
+Please shape this into a YouTube Short/TikTok/Reels pacing structure with suggested cut points. Don't give any visual cues, ill handle that.
 
 Tone & Style:
 – Mythic but not flowery—grounded, clear, evocative
