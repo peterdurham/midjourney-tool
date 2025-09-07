@@ -6,7 +6,7 @@ Hook hard in the first line—open with a compelling, bold, or surprising idea t
 
 Reveal the deeper meaning of the theme, myth, or archetype—not just what happens, but why it matters with successive insights.
 
-Drop in relevant lesser-known facts or details—ancient origins, planetary links, mystery cults, mythic contradictions, symbolic patterns, etc.—anything that adds real value. Don't include any details that are not relevant to the theme.
+Drop in relevant lesser-known facts or details—ancient origins, planetary links, comparitive mythology, mythic contradictions, symbolic patterns, etc.—anything that adds real value. Don't include any details that are not relevant to the theme.
 
 End with an insight that hits emotionally or intellectually, leaving the viewer with a sense of mythic memory, psychological truth, or overarching relevance
 
