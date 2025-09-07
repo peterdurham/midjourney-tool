@@ -12,8 +12,8 @@ export default function MidjourneyTool() {
     mood: [],
     aspectRatio: "9:16",
     references: [],
-    extraDetails:
-      "composition weighted toward the bottom, open and uncluttered space above",
+    // extraDetails: "composition weighted toward the bottom, open and uncluttered space above",
+    extraDetails: "",
   });
 
   const [generatedPrompt, setGeneratedPrompt] = useState("");
