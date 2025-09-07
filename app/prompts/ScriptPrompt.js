@@ -1,4 +1,4 @@
-export const scriptPrompt = `Please help me create a short-form video script (30–60 seconds) for my channel Mythic Remembering. The goal of this video is to deliver a powerful, insight-rich exploration of a mythic or symbolic theme that most people think they understand—but don’t.
+export const scriptPrompt = `Please help me create a short-form video script (30–60 seconds). The goal of this video is to deliver a powerful, insight-rich exploration of a mythic or symbolic theme that most people think they understand—but don’t.
 
 The script must do four things well:
 
