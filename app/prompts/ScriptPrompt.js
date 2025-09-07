@@ -12,6 +12,8 @@ End with an insight that hits emotionally or intellectually, leaving the viewer 
 
 Please shape this into a YouTube Short/TikTok/Reels pacing structure with suggested cut points. Don't give any visual cues, ill handle that.
 
+Feel free to change the provided hook if you think it can be improved.
+
 Tone & Style:
 – Mythic but not flowery. Grounded, clear, evocative
 – Poetic where needed, but always in service of meaning
