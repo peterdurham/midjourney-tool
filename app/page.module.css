@@ -59,6 +59,7 @@
   padding: 32px;
   border-radius: 16px;
   border: 1px solid var(--gray-alpha-200);
+  margin-bottom: 32px;
 }
 
 .formGroup {

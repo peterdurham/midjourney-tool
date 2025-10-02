@@ -3,6 +3,16 @@
 import { useState } from "react";
 import styles from "../page.module.css";
 
+// "1970s_fantasy_poster": {
+//   name: "1970s Fantasy Poster",
+//   artStyle: "1970s fantasy illustration",
+//   lighting: "dramatic spotlight",
+//   palette: "blue/orange complementary",
+//   mood: ["heroic", "pulp action"],
+//   aspectRatio: "9:16",
+//   references: ["Boris Vallejo", "Greg Hildebrandt"],
+// },
+
 export default function MidjourneyTool() {
   const [formData, setFormData] = useState({
     scene: "",
@@ -30,33 +40,95 @@ export default function MidjourneyTool() {
     dark_fantasy_oil: {
       name: "Dark Fantasy Oil",
       artStyle: "dark fantasy oil painting",
-      lighting: "chiaroscuro",
-      palette: "deep reds, golds, blacks",
-      mood: ["solemn", "mythic"],
-      aspectRatio: "9:16",
-      references: ["Jean-Léon Gérôme", "Frank Frazetta"],
+      lighting: "chiaroscuro, glowing embers, misty backlight",
+      palette:
+        "deep crimsons, burnished golds, obsidian black, moss greens, muted grays",
+      mood: ["solemn", "mythic", "ominous"],
+      references: ["Jean-Léon Gérôme", "Frank Frazetta", "John Martin"],
     },
     "1970s_fantasy_poster": {
       name: "1970s Fantasy Poster",
-      artStyle: "1970s fantasy illustration",
-      lighting: "dramatic spotlight",
-      palette: "blue/orange complementary",
-      mood: ["heroic", "pulp action"],
-      aspectRatio: "9:16",
-      references: ["Boris Vallejo", "Greg Hildebrandt"],
+      artStyle: "1970s pulp fantasy illustration",
+      lighting: "dramatic spotlight, airbrushed glow, backlit figures",
+      palette:
+        "sapphire blues, fiery oranges, emerald greens, metallic highlights, warm skin tones",
+      mood: ["heroic", "vivid", "pulp action"],
+      references: ["Boris Vallejo", "Greg Hildebrandt", "Ken Kelly"],
     },
     ancient_fairy_biopunk: {
       name: "Ancient Fairy Biopunk",
       artStyle:
-        "photorealistic hyper-realism blended with woodcut fairy tale and Romanesque fantasy mural",
-      lighting: "crepuscular rays, cinematic IMAX glow, deep focus",
-      palette: "verdant greens, golden light, shadowed contours",
-      mood: ["majestic", "wondrous", "mythic", "exquisite"],
-      aspectRatio: "9:16",
+        "photorealistic mythic realism fused with fairy tale woodcut and biopunk fantasy mural",
+      lighting: "crepuscular rays, cinematic IMAX glow, bioluminescent accents",
+      palette:
+        "verdant greens, amber light, bronze patinas, soft violets, twilight blues",
+      mood: ["majestic", "wondrous", "mythic"],
       references: [
-        "high fantasy religious mural painting",
-        "biopunk oil painting",
+        "religious mural painting",
+        "biopunk concept art",
         "IMAX cinematography",
+      ],
+    },
+    romantic_sublime_landscape: {
+      name: "Romantic Sublime Landscape",
+      artStyle:
+        "romantic landscape painting emphasizing awe and natural grandeur",
+      lighting: "stormlit skies, glowing horizons, divine shafts of light",
+      palette:
+        "stormcloud grays, silver whites, oceanic blues, earthy browns, radiant gold edges",
+      mood: ["sublime", "ominous", "majestic"],
+      references: ["Caspar David Friedrich", "John Martin"],
+    },
+    symbolist_dreamscape: {
+      name: "Symbolist Dreamscape",
+      artStyle: "mythic symbolist and surrealist painting",
+      lighting:
+        "moody twilight glow, diffused lunar light, otherworldly atmosphere",
+      palette:
+        "emerald greens, soft violets, pale gold, misty grays, nocturnal blues",
+      mood: ["dreamlike", "mystical", "enigmatic"],
+      references: ["Odilon Redon", "Gustave Moreau"],
+    },
+    heroic_bronze_age: {
+      name: "Heroic Bronze Age",
+      artStyle: "neo-classical heroic realism with mythic warriors",
+      lighting: "dappled daylight, metallic glint, battlefield haze",
+      palette:
+        "bronze armor tones, crimson cloaks, dusty earth, sea blue skies, golden light",
+      mood: ["heroic", "stoic", "mythic"],
+      references: ["Jacques-Louis David", "Angus McBride"],
+    },
+    mystic_cosmic_realism: {
+      name: "Mystic Cosmic Realism",
+      artStyle: "cosmic fantasy realism with astral and mythological motifs",
+      lighting: "celestial glow, starlit shimmer, radiant cosmic backlight",
+      palette:
+        "nebula purples, starlight silver, midnight blue, aurora greens, deep blacks",
+      mood: ["cosmic", "transcendent", "awe-inspiring"],
+      references: ["John Harris", "Alex Ross (cosmic works)"],
+    },
+    luminous_mythic_modern: {
+      name: "Luminous Mythic Modern",
+      artStyle:
+        "mythic fantasy realism with painterly brushwork and modern cinematic polish",
+      lighting: "radiant skylight, glowing edge-light, atmospheric haze",
+      palette:
+        "opal whites, radiant gold, jade green, storm blues, ember orange highlights",
+      mood: ["uplifting", "mythic", "cinematic"],
+      references: ["John William Waterhouse", "modern fantasy concept art"],
+    },
+    twilight_arcane: {
+      name: "Twilight Arcane",
+      artStyle:
+        "mystical twilight fantasy painting with surreal magical energy",
+      lighting: "dusky horizon glow, moonlit shimmer, glowing runic light",
+      palette:
+        "twilight purples, indigo blues, silver mist, ember sparks, mossy greens",
+      mood: ["mystical", "arcane", "wondrous"],
+      references: [
+        "symbolist painting",
+        "dark fantasy illustration",
+        "cosmic surrealism",
       ],
     },
   };
@@ -93,8 +165,9 @@ export default function MidjourneyTool() {
         mood: [],
         aspectRatio: "9:16",
         references: [],
-        extraDetails:
-          "composition weighted toward the bottom, open uncluttered space above, clear focus on the central figure",
+        // extraDetails:
+        //   "composition weighted toward the bottom, open uncluttered space above, clear focus on the central figure",
+        extraDetails: "",
       });
       setAllPresetsMode(false);
       return;
@@ -113,7 +186,7 @@ export default function MidjourneyTool() {
         lighting: preset.lighting,
         palette: preset.palette,
         mood: [...preset.mood],
-        aspectRatio: preset.aspectRatio,
+        aspectRatio: formData.aspectRatio, // Keep user's aspect ratio selection
         references: [...preset.references],
         extraDetails: formData.extraDetails, // Keep the extra details
       });
@@ -143,7 +216,7 @@ export default function MidjourneyTool() {
           prompt += `, ${formData.extraDetails}`;
         }
 
-        prompt += ` --ar ${preset.aspectRatio}`;
+        prompt += ` --ar ${formData.aspectRatio}`;
 
         return {
           name: preset.name,
@@ -261,10 +334,6 @@ export default function MidjourneyTool() {
               </option>
             ))}
           </select>
-          <small className={styles.helpText}>
-            Choose a preset to quickly populate the form, then customize as
-            needed
-          </small>
         </div>
 
         <div className={styles.formGroup}>
@@ -277,88 +346,6 @@ export default function MidjourneyTool() {
             placeholder="e.g., A cozy coffee shop interior"
             className={styles.input}
           />
-        </div>
-
-        <div className={styles.formGroup}>
-          <label htmlFor="artStyle">Art Style *</label>
-          <input
-            type="text"
-            id="artStyle"
-            value={formData.artStyle}
-            onChange={(e) => handleInputChange("artStyle", e.target.value)}
-            placeholder="e.g., digital art, oil painting, watercolor"
-            className={styles.input}
-          />
-        </div>
-
-        <div className={styles.formGroup}>
-          <label htmlFor="lighting">Lighting *</label>
-          <input
-            type="text"
-            id="lighting"
-            value={formData.lighting}
-            onChange={(e) => handleInputChange("lighting", e.target.value)}
-            placeholder="e.g., warm golden hour, dramatic shadows"
-            className={styles.input}
-          />
-        </div>
-
-        <div className={styles.formGroup}>
-          <label htmlFor="palette">Color Palette *</label>
-          <input
-            type="text"
-            id="palette"
-            value={formData.palette}
-            onChange={(e) => handleInputChange("palette", e.target.value)}
-            placeholder="e.g., earth tones, vibrant neon, monochrome"
-            className={styles.input}
-          />
-        </div>
-
-        <div className={styles.formGroup}>
-          <label htmlFor="mood">Mood (Optional)</label>
-          <div className={styles.arrayInput}>
-            <input
-              type="text"
-              id="mood"
-              placeholder="e.g., peaceful, mysterious, energetic"
-              className={styles.input}
-              onKeyPress={(e) => {
-                if (e.key === "Enter") {
-                  handleArrayChange("mood", e.target.value, "add");
-                  e.target.value = "";
-                }
-              }}
-            />
-            <button
-              type="button"
-              onClick={() => {
-                const input = document.getElementById("mood");
-                if (input.value.trim()) {
-                  handleArrayChange("mood", input.value, "add");
-                  input.value = "";
-                }
-              }}
-              className={styles.addButton}
-            >
-              Add
-            </button>
-          </div>
-          {formData.mood.length > 0 && (
-            <div className={styles.tags}>
-              {formData.mood.map((mood, index) => (
-                <span key={index} className={styles.tag}>
-                  {mood}
-                  <button
-                    onClick={() => handleArrayChange("mood", index, "remove")}
-                    className={styles.removeButton}
-                  >
-                    ×
-                  </button>
-                </span>
-              ))}
-            </div>
-          )}
         </div>
 
         <div className={styles.formGroup}>
@@ -378,76 +365,21 @@ export default function MidjourneyTool() {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="references">Reference Styles (Optional)</label>
-          <div className={styles.arrayInput}>
-            <input
-              type="text"
-              id="references"
-              placeholder="e.g., Studio Ghibli, Van Gogh, cyberpunk"
-              className={styles.input}
-              onKeyPress={(e) => {
-                if (e.key === "Enter") {
-                  handleArrayChange("references", e.target.value, "add");
-                  e.target.value = "";
-                }
-              }}
-            />
-            <button
-              type="button"
-              onClick={() => {
-                const input = document.getElementById("references");
-                if (input.value.trim()) {
-                  handleArrayChange("references", input.value, "add");
-                  input.value = "";
-                }
-              }}
-              className={styles.addButton}
-            >
-              Add
-            </button>
-          </div>
-          {formData.references.length > 0 && (
-            <div className={styles.tags}>
-              {formData.references.map((ref, index) => (
-                <span key={index} className={styles.tag}>
-                  {ref}
-                  <button
-                    onClick={() =>
-                      handleArrayChange("references", index, "remove")
-                    }
-                    className={styles.removeButton}
-                  >
-                    ×
-                  </button>
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div className={styles.formGroup}>
           <label htmlFor="extraDetails">Extra Details</label>
           <input
             type="text"
             id="extraDetails"
             value={formData.extraDetails}
             onChange={(e) => handleInputChange("extraDetails", e.target.value)}
-            placeholder="composition weighted toward the bottom, open and uncluttered space above"
+            placeholder="Details added to the prompt"
             className={styles.input}
           />
-          <small className={styles.helpText}>
-            Additional composition or style details to include in every prompt
-          </small>
         </div>
 
         <button
           onClick={generatePrompt}
           className={styles.generateButton}
-          disabled={
-            !formData.scene ||
-            (!allPresetsMode &&
-              (!formData.artStyle || !formData.lighting || !formData.palette))
-          }
+          disabled={!formData.scene}
         >
           Generate Prompt
         </button>
