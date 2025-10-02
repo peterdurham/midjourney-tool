@@ -1,13 +1,18 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./Navigation.module.css";
 
-export default function Navigation({ activeTab, onTabChange }) {
+export default function Navigation({ activeTab }) {
+  const pathname = usePathname();
+
   const navItems = [
-    { name: "Midjourney", id: "midjourney" },
-    { name: "Scene/Setting", id: "scene-tool" },
-    { name: "Quotes", id: "quotes-tool" },
-    { name: "Script", id: "script-tool" },
+    { name: "Midjourney", id: "midjourney", href: "/midjourney" },
+    { name: "Multi Scene", id: "multi-scene", href: "/multi-scene" },
+    { name: "Scene/Setting", id: "scene-tool", href: "/scene-tool" },
+    { name: "Quotes", id: "quotes-tool", href: "/quotes-tool" },
+    { name: "Script", id: "script-tool", href: "/script-tool" },
   ];
 
   return (
@@ -15,15 +20,15 @@ export default function Navigation({ activeTab, onTabChange }) {
       <div className={styles.navContainer}>
         <div className={styles.tabs}>
           {navItems.map((item) => (
-            <button
+            <Link
               key={item.id}
-              onClick={() => onTabChange(item.id)}
+              href={item.href}
               className={`${styles.tab} ${
-                activeTab === item.id ? styles.active : ""
+                pathname === item.href ? styles.active : ""
               }`}
             >
               {item.name}
-            </button>
+            </Link>
           ))}
         </div>
       </div>
