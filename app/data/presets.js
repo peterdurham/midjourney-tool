@@ -31,16 +31,6 @@ export const presets = {
       "IMAX cinematography",
     ],
   },
-  romantic_sublime_landscape: {
-    name: "Romantic Sublime Landscape",
-    artStyle:
-      "romantic landscape painting emphasizing awe and natural grandeur",
-    lighting: "stormlit skies, glowing horizons, divine shafts of light",
-    palette:
-      "stormcloud grays, silver whites, oceanic blues, earthy browns, radiant gold edges",
-    mood: ["sublime", "ominous", "majestic"],
-    references: ["Caspar David Friedrich", "John Martin"],
-  },
   symbolist_dreamscape: {
     name: "Symbolist Dreamscape",
     artStyle: "mythic symbolist and surrealist painting",
@@ -69,16 +59,6 @@ export const presets = {
     mood: ["cosmic", "transcendent", "awe-inspiring"],
     references: ["John Harris", "Alex Ross (cosmic works)"],
   },
-  luminous_mythic_modern: {
-    name: "Luminous Mythic Modern",
-    artStyle:
-      "mythic fantasy realism with painterly brushwork and modern cinematic polish",
-    lighting: "radiant skylight, glowing edge-light, atmospheric haze",
-    palette:
-      "opal whites, radiant gold, jade green, storm blues, ember orange highlights",
-    mood: ["uplifting", "mythic", "cinematic"],
-    references: ["John William Waterhouse", "modern fantasy concept art"],
-  },
   twilight_arcane: {
     name: "Twilight Arcane",
     artStyle: "mystical twilight fantasy painting with surreal magical energy",
@@ -90,6 +70,40 @@ export const presets = {
       "symbolist painting",
       "dark fantasy illustration",
       "cosmic surrealism",
+    ],
+  },
+  mythic_romantic_cover: {
+    name: "Mythic Romantic Cover",
+    artStyle:
+      "dark mythic-romantic painterly fantasy; heroic silhouettes, atmospheric depth, matte textured finish, subtle impasto; ancient-world props and armor accurate to culture",
+    lighting:
+      "stormlit chiaroscuro, strong backlight with rim-light, volumetric fog/mist, ember glow accents, moon/sun break through clouds",
+    palette:
+      "moonlit teals and verdigris, ember golds and firelight oranges, deep indigo night, slate and charcoal blacks, muted earth greens",
+    mood: ["solemn", "mythic", "ominous", "heroic", "sublime"],
+    references: [
+      "Caspar David Friedrich",
+      "John Martin",
+      "Gustave Doré",
+      "Frank Frazetta (mood)",
+      "modern dark-fantasy cover art",
+    ],
+  },
+  mythic_romantic_cover_2: {
+    name: "Mythic Romantic Cover",
+    artStyle:
+      "dark mythic-romantic painterly fantasy; heroic silhouette focus; atmospheric depth with matte, fine-grain brush texture; historically grounded ancient-world props and armor",
+    lighting:
+      "stormlit chiaroscuro, hard backlight with rim-light, volumetric fog, ember/fire glow accents, moonbreak or lightning highlights",
+    palette:
+      "moonlit teals/verdigris, ember golds and fire oranges, deep indigo night, slate charcoal, muted earth greens",
+    mood: ["solemn", "mythic", "ominous", "heroic", "sublime"],
+    references: [
+      "Arnold Böcklin",
+      "Atkinson Grimshaw",
+      "J.M.W. Turner",
+      "Ivan Shishkin",
+      "N.C. Wyeth",
     ],
   },
 };

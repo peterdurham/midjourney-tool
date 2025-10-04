@@ -35,7 +35,7 @@ export default function MidjourneyTool() {
 
   const [copyButtonStates, setCopyButtonStates] = useState({});
 
-  const aspectRatioOptions = ["1:1", "4:3", "3:2", "16:9", "9:16", "21:9"];
+  const aspectRatioOptions = ["1:1", "4:3", "2:3", "16:9", "9:16", "21:9"];
 
   const typeOptions = [
     { value: "", label: "None" },
