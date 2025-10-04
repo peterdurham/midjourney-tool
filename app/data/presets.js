@@ -106,4 +106,21 @@ export const presets = {
       "N.C. Wyeth",
     ],
   },
+  saga_painterly_cover: {
+    name: "Saga Painterly Cover",
+    artStyle:
+      "hand-painted mythic illustration (non-photoreal), gouache/oil on textured paper, visible brushwork and glazing, soft edges with controlled hard accents, matte finish, print-ready grain; ancient-world accuracy without modern/CG cues",
+    lighting:
+      "diffuse moonlit and ember backlight, stormlit chiaroscuro kept painterly, low specular highlights, volumetric mist painted as soft swirls, gentle rim-light for silhouette clarity",
+    palette:
+      "indigo night and slate charcoal; moonlit teals/verdigris; ember golds and fire-orange accents; muted olive and umber earths; restrained highlights in pale marble/silver",
+    mood: ["mythic", "solemn", "ominous", "contemplative", "heroic"],
+    references: [
+      "Alan Lee",
+      "John Howe",
+      "Kay Nielsen",
+      "John Bauer",
+      "Ivan Bilibin",
+    ],
+  },
 };
