@@ -45,6 +45,11 @@ export default function MidjourneyTool() {
       label: "Social",
     },
     {
+      value:
+        "composition weighted toward the center, clear focus on the central figure",
+      label: "Face Video / Montage",
+    },
+    {
       value: "book cover for a mythic text, epic and centered",
       label: "Book Cover",
     },
