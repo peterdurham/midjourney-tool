@@ -41,15 +41,6 @@ export const presets = {
     mood: ["dreamlike", "mystical", "enigmatic"],
     references: ["Odilon Redon", "Gustave Moreau"],
   },
-  heroic_bronze_age: {
-    name: "Heroic Bronze Age",
-    artStyle: "neo-classical heroic realism with mythic warriors",
-    lighting: "dappled daylight, metallic glint, battlefield haze",
-    palette:
-      "bronze armor tones, crimson cloaks, dusty earth, sea blue skies, golden light",
-    mood: ["heroic", "stoic", "mythic"],
-    references: ["Jacques-Louis David", "Angus McBride"],
-  },
   mystic_cosmic_realism: {
     name: "Mystic Cosmic Realism",
     artStyle: "cosmic fantasy realism with astral and mythological motifs",
@@ -121,6 +112,62 @@ export const presets = {
       "Kay Nielsen",
       "John Bauer",
       "Ivan Bilibin",
+    ],
+  },
+  celestial_pastel_glow: {
+    name: "Celestial Pastel Glow",
+    artStyle:
+      "soft watercolor and digital airbrush fusion with celestial motifs",
+    lighting: "gentle ambient glow, golden hour diffusion, luminous haze",
+    palette:
+      "pale lavenders, rose quartz pinks, cream whites, pearl golds, misty blues",
+    mood: ["ethereal", "warm", "hopeful", "feminine"],
+    references: [
+      "watercolor illustration",
+      "renaissance celestial diagrams",
+      "fashion editorial lighting",
+    ],
+  },
+  astral_watercolor_minimalism: {
+    name: "Astral Watercolor Minimalism",
+    artStyle:
+      "delicate watercolor wash with fine linework and minimalist astrology symbols",
+    lighting: "soft daylight, matte finish, light paper texture",
+    palette:
+      "sage green, blush pink, ivory, muted sky blue, champagne gold accents",
+    mood: ["serene", "graceful", "balanced", "modern"],
+    references: [
+      "botanical illustration",
+      "modern minimal line art",
+      "Japanese watercolor prints",
+    ],
+  },
+  dreamy_cosmic_femininity: {
+    name: "Dreamy Cosmic Femininity",
+    artStyle:
+      "soft focus cosmic portraiture blending human silhouettes with pastel nebulae and constellations",
+    lighting: "halo glow, starlight shimmer, soft diffusion lens effect",
+    palette:
+      "lavender mist, dusty rose, moonlight silver, pale gold, faded lilac",
+    mood: ["dreamlike", "romantic", "mystical", "introspective"],
+    references: [
+      "fashion fine-art portrait photography",
+      "ethereal portrait painting",
+      "soft cosmic surrealism",
+    ],
+  },
+  golden_hour_astrology: {
+    name: "Golden Hour Astrology",
+    artStyle:
+      "photorealistic celestial photography aesthetic with soft lens flares and gentle film grain",
+    lighting: "sunset backlight, lens bloom, radiant halo edges",
+    palette:
+      "honey gold, soft coral, powder blue, muted lavender, ivory highlights",
+    mood: ["calm", "optimistic", "spiritual", "uplifting"],
+    references: [
+      "golden hour portrait photography",
+      "ambient nature videography",
+      "soft cinematic stills",
     ],
   },
 };
