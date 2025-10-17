@@ -63,57 +63,6 @@ export const presets = {
       "cosmic surrealism",
     ],
   },
-  mythic_romantic_cover: {
-    name: "Mythic Romantic Cover",
-    artStyle:
-      "dark mythic-romantic painterly fantasy; heroic silhouettes, atmospheric depth, matte textured finish, subtle impasto; ancient-world props and armor accurate to culture",
-    lighting:
-      "stormlit chiaroscuro, strong backlight with rim-light, volumetric fog/mist, ember glow accents, moon/sun break through clouds",
-    palette:
-      "moonlit teals and verdigris, ember golds and firelight oranges, deep indigo night, slate and charcoal blacks, muted earth greens",
-    mood: ["solemn", "mythic", "ominous", "heroic", "sublime"],
-    references: [
-      "Caspar David Friedrich",
-      "John Martin",
-      "Gustave Doré",
-      "Frank Frazetta (mood)",
-      "modern dark-fantasy cover art",
-    ],
-  },
-  mythic_romantic_cover_2: {
-    name: "Mythic Romantic Cover",
-    artStyle:
-      "dark mythic-romantic painterly fantasy; heroic silhouette focus; atmospheric depth with matte, fine-grain brush texture; historically grounded ancient-world props and armor",
-    lighting:
-      "stormlit chiaroscuro, hard backlight with rim-light, volumetric fog, ember/fire glow accents, moonbreak or lightning highlights",
-    palette:
-      "moonlit teals/verdigris, ember golds and fire oranges, deep indigo night, slate charcoal, muted earth greens",
-    mood: ["solemn", "mythic", "ominous", "heroic", "sublime"],
-    references: [
-      "Arnold Böcklin",
-      "Atkinson Grimshaw",
-      "J.M.W. Turner",
-      "Ivan Shishkin",
-      "N.C. Wyeth",
-    ],
-  },
-  saga_painterly_cover: {
-    name: "Saga Painterly Cover",
-    artStyle:
-      "hand-painted mythic illustration (non-photoreal), gouache/oil on textured paper, visible brushwork and glazing, soft edges with controlled hard accents, matte finish, print-ready grain; ancient-world accuracy without modern/CG cues",
-    lighting:
-      "diffuse moonlit and ember backlight, stormlit chiaroscuro kept painterly, low specular highlights, volumetric mist painted as soft swirls, gentle rim-light for silhouette clarity",
-    palette:
-      "indigo night and slate charcoal; moonlit teals/verdigris; ember golds and fire-orange accents; muted olive and umber earths; restrained highlights in pale marble/silver",
-    mood: ["mythic", "solemn", "ominous", "contemplative", "heroic"],
-    references: [
-      "Alan Lee",
-      "John Howe",
-      "Kay Nielsen",
-      "John Bauer",
-      "Ivan Bilibin",
-    ],
-  },
   celestial_pastel_glow: {
     name: "Celestial Pastel Glow",
     artStyle:
@@ -168,6 +117,54 @@ export const presets = {
       "golden hour portrait photography",
       "ambient nature videography",
       "soft cinematic stills",
+    ],
+  },
+  luminous_cosmic_realism: {
+    name: "Luminous Cosmic Realism",
+    artStyle:
+      "cinematic astrophotography realism blended with fine-art lighting; crisp planetary forms, subtle atmosphere haze, light refraction and depth; feels tangible but still otherworldly",
+    lighting:
+      "strong directional light with soft volumetric diffusion; radiant rim glows on edges; lens reflections and faint nebular bloom in shadows",
+    palette:
+      "midnight blue, silver-white, faint amber, desaturated indigo, deep charcoal, touches of pale cyan",
+    mood: ["awe", "clarity", "elegant", "contemplative"],
+    references: [
+      "IMAX space cinematography",
+      "James Turrell (light perception)",
+      "NASA deep-space imaging",
+      "high-end product photography",
+    ],
+  },
+  symbolist_dream_geometry: {
+    name: "Symbolist Dream Geometry",
+    artStyle:
+      "layered surrealism mixing sacred geometry, mythic symbolism, and subtle painterly textures; abstract forms built from circles, arcs, constellations, and architectural motifs; poetic but structured",
+    lighting:
+      "soft interior glow from shapes themselves; subtle gradients and vignettes; diffused chiaroscuro that feels metaphysical rather than literal",
+    palette:
+      "platinum white, muted violet, aged parchment, gold leaf tone, shadowed slate, gentle ochre wash",
+    mood: ["mystical", "structured", "balanced", "timeless"],
+    references: [
+      "Jean Delville (symbolism)",
+      "sacred geometry manuscripts",
+      "early modern surrealism",
+      "esoteric art deco design",
+    ],
+  },
+  astro_futurist_neutral: {
+    name: "Astro Futurist Neutral",
+    artStyle:
+      "sleek modern visual language blending scientific interface design with cosmic abstraction; clean gradients, vector precision, minimal noise; merges data aesthetics with spiritual undertones",
+    lighting:
+      "cool controlled backlight; glowing linework and halo grids; faint reflections and glass diffusion for dimensionality",
+    palette:
+      "graphite gray, cobalt blue, neutral white, soft gradient gold, transparent overlays",
+    mood: ["modern", "intelligent", "serene", "cosmic"],
+    references: [
+      "Apple product cinematics",
+      "modern UI concept art",
+      "sci-fi visualization",
+      "space telescope render design",
     ],
   },
 };
