@@ -119,22 +119,6 @@ export const presets = {
       "soft cinematic stills",
     ],
   },
-  luminous_cosmic_realism: {
-    name: "Luminous Cosmic Realism",
-    artStyle:
-      "cinematic astrophotography realism blended with fine-art lighting; crisp planetary forms, subtle atmosphere haze, light refraction and depth; feels tangible but still otherworldly",
-    lighting:
-      "strong directional light with soft volumetric diffusion; radiant rim glows on edges; lens reflections and faint nebular bloom in shadows",
-    palette:
-      "midnight blue, silver-white, faint amber, desaturated indigo, deep charcoal, touches of pale cyan",
-    mood: ["awe", "clarity", "elegant", "contemplative"],
-    references: [
-      "IMAX space cinematography",
-      "James Turrell (light perception)",
-      "NASA deep-space imaging",
-      "high-end product photography",
-    ],
-  },
   symbolist_dream_geometry: {
     name: "Symbolist Dream Geometry",
     artStyle:
@@ -149,22 +133,6 @@ export const presets = {
       "sacred geometry manuscripts",
       "early modern surrealism",
       "esoteric art deco design",
-    ],
-  },
-  astro_futurist_neutral: {
-    name: "Astro Futurist Neutral",
-    artStyle:
-      "sleek modern visual language blending scientific interface design with cosmic abstraction; clean gradients, vector precision, minimal noise; merges data aesthetics with spiritual undertones",
-    lighting:
-      "cool controlled backlight; glowing linework and halo grids; faint reflections and glass diffusion for dimensionality",
-    palette:
-      "graphite gray, cobalt blue, neutral white, soft gradient gold, transparent overlays",
-    mood: ["modern", "intelligent", "serene", "cosmic"],
-    references: [
-      "Apple product cinematics",
-      "modern UI concept art",
-      "sci-fi visualization",
-      "space telescope render design",
     ],
   },
 };
